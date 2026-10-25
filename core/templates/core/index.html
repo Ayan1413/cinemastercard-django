@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMastercard Azerbaijan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        body { background-color: #1a1d24; color: #ffffff; min-height: 100vh; }
+
+        /* Navigation */
+        nav { background-color: #111319; padding: 15px 8%; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #e50914; }
+        .logo { font-size: 1.8rem; font-weight: bold; color: #ffffff; text-decoration: none; }
+        .logo span { color: #e50914; }
+        .nav-links { display: flex; list-style: none; gap: 20px; }
+        .nav-links a { color: #ffffff; text-decoration: none; font-weight: bold; }
+
+        /* Main Content */
+        .container { padding: 40px 8%; }
+        h1 { margin-bottom: 25px; border-left: 5px solid #e50914; padding-left: 15px; font-size: 2rem; }
+
+        /* Grid */
+        .movies-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; }
+        .movie-card { background: #222630; border-radius: 8px; overflow: hidden; border: 1px solid #333948; text-align: center; padding-bottom: 15px; }
+        .movie-card img { width: 100%; height: 320px; object-fit: cover; }
+        .movie-card h3 { margin: 15px 0 8px; font-size: 1.1rem; color: #fff; }
+        .movie-card p { color: #e50914; font-weight: bold; font-size: 0.9rem; margin-bottom: 12px; }
+        .btn-buy { background: #e50914; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo">CINE<span>MASTERCARD</span></a>
+        <ul class="nav-links">
+            <li><a href="#">Cədvəl</a></li>
+            <li><a href="#">Filmlər</a></li>
+            <li><a href="#">Kinoteatrlar</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Afışa - İndi Nümayişdə</h1>
+        
+        <div class="movies-grid">
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/M/MV5BN2QyZGU3YjktZmD0Mi00NWMyLWI2ZGQtNWFiYjVlzk2MTJhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Dune">
+                <h3>Dune: İkinci Hissə</h3>
+                <p>IMAX 3D / VIP</p>
+                <a href="#" class="btn-buy">Bilet Al</a>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_FMjpg_UX1000_.jpg" alt="Avengers">
+                <h3>Qisasçılar: Sonsuzluq</h3>
+                <p>2D / ATMOS</p>
+                <a href="#" class="btn-buy">Bilet Al</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
